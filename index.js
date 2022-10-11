@@ -33,6 +33,23 @@ let varible2 = `${180} cm`;
 console.log(varible1);
 console.log(varible2);
 
+// mellette lévő dolgok azok kommentek
+
+// let varible = 'a';
+// let varible2 = 12;
+// let varible3 = false;
+
+// let varible4 = varible2 + 32;
+
+// varible = varible + 32;
+// varible2 += 32;
+
+// const constvarible = 12;
+
+// constvarible = 14;
+
+// console.log(varible2);
+
 
 let d = 3;
 
@@ -54,19 +71,20 @@ if (d < 5 && d == 3) {
     console.log('kutya');
 }
 
-// mellette lévő dolgok azok kommentek
 
-// let varible = 'a';
-// let varible2 = 12;
-// let varible3 = false;
+let e = 1;
+while (e <= 100) {
+    console.log(e);
+    e++;
+}
 
-// let varible4 = varible2 + 32;
+for (let f = 1; f <= 100; f++) {
+    console.log(f);
+}
 
-// varible = varible + 32;
-// varible2 += 32;
+let g = 2;
+while (g <= 500) {
+    console.log(g);
+    g += 2;
+}
 
-// const constvarible = 12;
-
-// constvarible = 14;
-
-// console.log(varible2);
