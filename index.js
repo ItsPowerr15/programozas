@@ -113,3 +113,9 @@ function faktorial(e){
     console.log(e)
 }
 faktorial(3);
+
+
+const array = [1, 4, 5, 7];
+console.log(array[2]);
+console.log(array[0] + array[2]);
+console.log(array);
