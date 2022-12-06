@@ -89,33 +89,53 @@
 // }
 
 
-function akarmi(a) {
-    console.log("Hello", a)
-}
+// function akarmi(a) {
+//     console.log("Hello", a)
+// }
 
-akarmi("andras");
+// akarmi("andras");
 
-function valami(b) {
-    return b * 2;
-}
+// function valami(b) {
+//     return b * 2;
+// }
 
-console.log(valami(21));
+// console.log(valami(21));
 
-function random(c, d) {
-    return c + d;
-}
+// function random(c, d) {
+//     return c + d;
+// }
 
-console.log(random(12, 18));
+// console.log(random(12, 18));
 
-function faktorial(e){
-    while(e < 100)
-    e++
-    console.log(e)
-}
-faktorial(3);
+// function faktorial(e){
+//     while(e < 100)
+//     e++
+//     console.log(e)
+// }
+// faktorial(3);
 
 
-const array = [1, 4, 5, 7];
-console.log(array[2]);
-console.log(array[0] + array[2]);
-console.log(array);
+// const array = [1, 4, 5, 7];
+// console.log(array[2]);
+// console.log(array[0] + array[2]);
+// console.log(array);
+
+
+
+let personalInformation = {
+    height: 182,
+    name: {
+        first: 'Gellén',
+        last: 'András',
+    },
+};
+
+console.log(personalInformation.height);
+console.log(personalInformation.name.first, personalInformation.name.last);
+
+personalInformation.favoritegame = ['OSU!', 'Overwatch 2', 'LOL']
+
+console.log(personalInformation.favoritegame);
+
+console.log(Object.keys(personalInformation));
+console.log(Object.values(personalInformation));
