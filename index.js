@@ -122,20 +122,83 @@
 
 
 
-let personalInformation = {
-    height: 182,
-    name: {
-        first: 'Gellén',
-        last: 'András',
-    },
+// let personalInformation = {
+//     height: 182,
+//     name: {
+//         first: 'Gellén',
+//         last: 'András',
+//     },
+// };
+
+// console.log(personalInformation.height);
+// console.log(personalInformation.name.first, personalInformation.name.last);
+
+// personalInformation.favoritegame = ['OSU!', 'Overwatch 2', 'LOL']
+
+// console.log(personalInformation.favoritegame);
+
+// console.log(Object.keys(personalInformation));
+// console.log(Object.values(personalInformation));
+
+
+const data = {
+	allTimeFavoriteBookId: 4,
+	authors: [
+		{
+			authorId: 1,
+			name: 'J. K. Rowling',
+		},
+		{
+			authorId: 2,
+			name: 'George R. R. Martin',
+		},
+		{
+			authorId: 3,
+			name: 'Stephen King',
+		},
+	],
+	books: [
+		{
+			bookId: 1,
+			title: 'Harry Potter és a Bölcsek Köve',
+			authorId: 1,
+			score: 12,
+			releaseDate: 1997,
+		},
+		{
+			bookId: 2,
+			title: 'Trónok Harca',
+			authorId: 2,
+			score: 8,
+			releaseDate: 2002,
+		},
+		{
+			bookId: 3,
+			title: 'Harry Potter és a Titkok Kamrája',
+			authorId: 1,
+			score: 16,
+			releaseDate: 1998,
+		},
+		{
+			bookId: 4,
+			title: 'Tortúra',
+			authorId: 3,
+			score: 4,
+			releaseDate: 1987,
+		},
+	],
 };
 
-console.log(personalInformation.height);
-console.log(personalInformation.name.first, personalInformation.name.last);
+const favoritebook = data.books.find((item) => item.bookId === data.allTimeFavoriteBookId);
+const favoritebooktitle = favoritebook.title;
+console.log(favoritebooktitle);
 
-personalInformation.favoritegame = ['OSU!', 'Overwatch 2', 'LOL']
+const favoritebookAuthor = data.authors.find((item) => item.authorId === favoritebook.authorId);
+const favoritebookAuthorName = favoritebookAuthor.name;
+console.log(favoritebookAuthorName);
 
-console.log(personalInformation.favoritegame);
+const score = data.books.filter((item) => item.score > 8);
+console.log(score);
 
-console.log(Object.keys(personalInformation));
-console.log(Object.values(personalInformation));
+const releaseDate = data.books.filter((item) => item.releaseDate < 2000);
+console.log(releaseDate);
